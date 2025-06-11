@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tetris</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="テトリス.css">
+</head>
+
+<body>
+    <div id="container">
+        <canvas id="tetris" width="600" height="600"></canvas>
+        <div id="overlayContainer">
+            <video id="video" width="650" height="500" autoplay></video>
+            <canvas id="overlayCanvas" width="650" height="500"></canvas>
+        </div>
+    </div>
+    <h2 id="right">右足を上げる:右に移動</h2>
+    <h2 id="left">左足を上げる:左に移動</h2>
+    <h2 id="rotate">Tポーズをとる:右回転</h2>
+    <audio id="BGM" src="効果音/BGM.mp3" preload="auto"></audio>
+    <audio id="MoveAndRotateSound" src="効果音/moveAndRotateSound.mp3" preload="auto"></audio>
+    <audio id="lineDereteSound" src="効果音/lineDereteSound.mp3" preload="auto"></audio>
+    <audio id="GameOverSound" src="効果音/GameOverSound.mp3" preload="auto"></audio>
+    <script src="テトリス.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 20px;
+    position: relative;
+}
+
+#tetris {
+    border: 2px solid white;
+    width: 600px;
+    height: 600px;
+    flex-shrink: 0;
+}
+
+#overlayContainer {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    flex-shrink: 0;
+}
+
+#video {
+    width: 600px;
+    height: 450px;
+    transform: scaleX(-1);
+    border: 2px solid white;
+}
+
+#overlayCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 450px;
+}
+
+#right {
+    position: absolute;
+    bottom: 8%;
+    left: 77%;
+    transform: translateX(-77%);
+    color: red;
+    font-size: 20px;
+    z-index: 100;
+}
+
+#left {
+    position: absolute;
+    bottom: 4%;
+    left: 77%;
+    transform: translateX(-77%);
+    color: #ffaa00;
+    font-size: 20px;
+    z-index: 100;
+}
+
+#rotate {
+    position: absolute;
+    bottom: 0%;
+    left: 77%;
+    transform: translateX(-77%);
+    color: #00ff00;
+    font-size: 20px;
+    z-index: 100;
+}
